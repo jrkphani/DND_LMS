@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 246 50% 98%; /* light violet-gray */
+    --foreground: 245 15% 20%; /* dark gray for text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 220 76% 38%; /* Yamaha blue */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 220 100% 14%; /* Yamaha navy */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 220 76% 38%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 220 76% 38%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 100% 14%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 220 76% 38%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 40% 96.1%;
+    --sidebar-accent-foreground: 220 76% 38%;
+    --sidebar-border: 220 13% 28%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.logo {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.stat-card {
+  @apply bg-white rounded-lg shadow-md p-6 transition-all hover:shadow-lg;
+}
+
+.course-card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg;
+}
+
+.course-card-header {
+  @apply p-6 bg-yamaha-blue text-white;
+}
+
+.course-card-body {
+  @apply p-6;
+}
+
+.course-card-footer {
+  @apply p-4 border-t border-gray-200 bg-gray-50;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "dnd_lms",
+  "version": "1.0.0",
+  "description": "A comprehensive web-based platform designed to facilitate online training and education for Yamaha dealers and staff. The DND LMS streamlines course management, user registration, content delivery, assessment, and reporting for the Yamaha dealer network.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrkphani/DND_LMS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jrkphani/DND_LMS/issues"
+  },
+  "homepage": "https://github.com/jrkphani/DND_LMS#readme"
+}
